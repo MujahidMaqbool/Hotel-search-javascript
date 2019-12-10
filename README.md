@@ -4,7 +4,7 @@
 
 * HTML
 * SCSS
-* JavaScript
+* Plain JavaScript
 * Webpack
 
 ## Description
