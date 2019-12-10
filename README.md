@@ -1,4 +1,4 @@
-# Search Hotel using Fake-api data
+# Search Hotel using fake-api data
 
 # Technologies used
 
