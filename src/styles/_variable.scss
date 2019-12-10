@@ -1,0 +1,45 @@
+$default-FontFamily: "Montserrat", sans-serif;
+$default-color: #333333;
+$font-weight-base:400;
+$line-height-base:22px;
+
+$bg-white: #ffffff;
+$bg-grey: #f4f4f4; 
+$black:#000000;
+$defaultfont-size: 16px;
+$h1Font-size: 40px;
+$h2Font-size: 34px;
+$h3Font-size: 30px;
+$h4Font-size: 26px;
+$h5Font-size: 22px;
+$h6Font-size: 18px;
+$lh:         50px;
+
+$logo-color: #ffffff;
+$link-color:#e7b315;
+$link-hover-color: #e7b315;
+$link-hover-decoration:none;
+$paragraph-margin-bottom:22px;
+$link-decoration:none;
+
+$btn-background-color:#e7b315;
+$btn-border-color:#e7b315;
+$btn-color:#ffffff;
+$btn-hover-background-color:#eec341;
+$btn-hover-border-color:#eec341;
+$btn-color-hover:#ffffff;
+$btn-font-size:14px;  
+$font-weight-button:600;
+
+$input-height:34px;
+$input-padding-y:8px;
+$input-padding-x:12px;
+$input-font-weight:400;
+$input-line-height:1.5;
+$input-bg:#ffffff;
+$input-border-width:1px;
+$input-border-color:#ced4da;
+
+// Grid variables
+$grid-columns: 12 !default;
+$grid-gutter-width: 30px !default;

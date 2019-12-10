@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Pirates</title>
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="p-lr-15">
+        <h4>Hotel Booking</h4>
+      </div>
+    </div>
+  </header>
+
+  <div class="main-container">
+    <div class="banner">
+      <img id="banner1" class="img-responsive" src="./src/images/slide-2.png" alt="Banner" />
+      <h2>Welcome to Hotel Booking</h2>
+    </div>
+
+
+    <section class="filters-wrapper m-t-0">
+      <div class="container">
+        <form name="filterHotel" id="filterHotel">
+          <div class="form-row max-width">
+            <div class="disp-inlineB col-4">
+              <div class="m-b-15">
+                <label for="starFilter">Filter by star</label>
+                <select id="starFilter" name="starFilter" class="form-control">
+                  <option value="0">All</option>
+                  <option value="1">1 Star</option>
+                  <option value="2">2 Star</option>
+                  <option value="3">3 Star</option>
+                  <option value="4">4 Star</option>
+                  <option value="5">5 Star</option>
+                </select>
+              </div>
+            </div>
+            <div class="disp-inlineB col-4">
+              <div class="m-b-15">
+                <label for="maxPrice">Filter by maximum price</label>
+                <input type="text" id="maxPrice" name="maxPrice" class="form-control" maxlength="7"
+                  placeholder="Enter maximum price" autocomplete="off" onkeypress="return isNumberKey(event)" />
+              </div>
+            </div>
+            <div class="disp-inlineB col-4">
+              <label class="hidden-xs">&nbsp;</label>
+              <button type="button" id="searchBtn" class="btn btn-main btn-block m-b-15">Search</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </section>
+
+    <section class="hotel-list">
+      <div class="container">
+        <div id="result-hotel" class="form-row max-width">
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+  <!--main container end-->
+
+  <footer>
+    <div class="container"> &copy; 2019 Hotel Booking All rights reserved.</div>
+  </footer>
+  <!--modal-->
+  <div class="modal-bg" style="visibility: hidden">
+    <div class="modal">
+      <span class="modal-close">&times;</span>
+      <div class="modal-header">
+        <h3 id="hotel-name"></h3>
+      </div>
+      <div class="modal-body">
+        <div class="detail-wrapper">
+          <div class="hotel-reviews">
+            <div id="hotel-detail" class="max-width">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--loader-->
+  <div id="loader" class="loader" style="display: none;">
+    <div class="spinner">
+      <div class="rect1"></div>
+      <div class="rect2"></div>
+      <div class="rect3"></div>
+      <div class="rect4"></div>
+      <div class="rect5"></div>
+    </div>
+  </div>
+  <!--go to top-->
+  <a href="#" class="cd-top text-replace js-cd-top" style="visibility: hidden">Top</a>
+
+</body>
+
+</html>

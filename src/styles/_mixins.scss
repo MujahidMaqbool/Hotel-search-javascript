@@ -1,0 +1,57 @@
+@mixin user-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @mixin box-sizing($box-sizing) {
+    -webkit-box-sizing: $box-sizing;
+    -moz-box-sizing: $box-sizing;
+    box-sizing: $box-sizing;
+  }
+  
+  @mixin border-radius($radius) {	
+      -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+  }
+  @mixin box-shadow-black {
+  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  }
+
+  @mixin make-row() {
+    display: flex;
+    flex-wrap: wrap;  
+    margin-right: ($grid-gutter-width / -2);  
+    margin-left: ($grid-gutter-width / -2);
+  }
+
+  @mixin make-col($size, $columns: $grid-columns) {
+    flex: 0 0 percentage($size / $columns);
+    // Add a `max-width` to ensure content within each column does not blow out
+    // the width of the column. Applies to IE10+ and Firefox. Chrome and Safari
+    // do not appear to require this.
+    max-width: percentage($size / $columns);
+  }
+
+  @mixin transform-translate($x, $y) {
+    -webkit-transform: translate($x, $y);
+    -moz-transform: translate($x, $y);
+    transform: translate($x, $y);
+  }
+
+  @mixin animation-delay($seconds) {
+    -webkit-animation-delay: $seconds;
+      -moz-animation-delay: $seconds;
+      animation-delay: $seconds;    
+  }
+
+  @mixin transition-delay($seconds) {
+    -webkit-transition-delay: $seconds;
+      -moz-transition-delay: $seconds;
+      transition-delay: $seconds; 
+         
+  }
